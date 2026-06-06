@@ -1,0 +1,51 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    benchmark (0.5.0)
+    connection_pool (3.0.2)
+    drb (2.2.3)
+    json (2.19.8)
+    logger (1.7.0)
+    minitest (6.0.6)
+      drb (~> 2.0)
+      prism (~> 1.5)
+    prism (1.9.0)
+    rack (3.2.6)
+    rake (13.4.2)
+    ratomic (0.3.5-x86_64-linux)
+    redis-client (0.29.0)
+      connection_pool
+    sidekiq (8.1.6)
+      connection_pool (>= 3.0.0)
+      json (>= 2.16.0)
+      logger (>= 1.7.0)
+      rack (>= 3.2.0)
+      redis-client (>= 0.29.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  benchmark (~> 0.5)
+  minitest (~> 6.0)
+  rake (~> 13.0)
+  ratomic (~> 0.3.5)
+  sidekiq (~> 8.1)
+
+CHECKSUMS
+  benchmark (0.5.0)
+  bundler (4.0.12) sha256=7f8b757d28dfb636e7b24fba2344ac6dd13b5b24f4b46d62573d483f211825ac
+  connection_pool (3.0.2)
+  drb (2.2.3)
+  json (2.19.8)
+  logger (1.7.0)
+  minitest (6.0.6)
+  prism (1.9.0)
+  rack (3.2.6)
+  rake (13.4.2)
+  ratomic (0.3.5-x86_64-linux)
+  redis-client (0.29.0)
+  sidekiq (8.1.6)
+
+BUNDLED WITH
+  4.0.12

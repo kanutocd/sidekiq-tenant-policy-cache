@@ -45,6 +45,10 @@ end
 The middleware looks for `tenant_id` on the job payload first, then in the first
 argument when it is hash-like.
 
+The policy itself stays a plain Ruby lambda. `Ratomic::Map` caches the computed
+allow/deny decision, so the middleware keeps the decision logic simple while the
+shared state remains atomic and cacheable.
+
 ## Limits
 
 This middleware intentionally does not persist policy decisions, publish metrics, or
